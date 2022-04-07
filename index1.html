@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/front-page.css">
+    <title>Al Haddad Motors</title>
+</head>
+<body>
+    
+    <div class="top-slider">
+        <header>
+            <img src="/images/logo.png" alt="logo">
+            <a href="#" class="hamburger"></a>
+            <nav>
+              <ul class="menu">
+                <li><a href="#" class="menu-item">Cars</a></li>
+                <li><a href="#" class="menu-item">Trucks</a></li>
+                <li><a href="#" class="menu-item">Loyalty</a></li>
+                <li><a href="#" class="menu-item">Service Center</a></li>
+                <li><a href="#" class="menu-item">Special Offers</a></li>
+                <li><a href="#" class="menu-item">Virtual Showroom</a></li>
+                <li><a href="#" class="menu-item">Contact Us</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="slider-cta">
+              <a href="#" class="btn-slider">Enquire Now</a>
+              <a href="#" class="btn-slider">Test Drive</a>
+          </div>
+    </div>
+    <section class="f-section">
+        <img src="/images/section-image.png" alt="">
+        <div class="text-box">
+            <h2>The Mercedes-AMG GT<br>
+                4-Door</h2>
+            <p>The Mercedes-AMG GT 4-Door Coupé is an executive car introduced in 2018 by Mercedes-AMG marketed as a five-door variant of the AMG GT two-door sports car. Despite the name and style, the car is not based on the sports car, but rather on the E-Class and CLS-Class.</p>
+        </div>
+    </section>
+    
+    <section class="cta-section">
+    <div class="text-plax">
+        <div>
+            <!-- <img src="/images/section-image.png" alt=""> -->
+            <div class="text-inside">
+                <h2>Luxury Interior</h2>
+                <a class="btn-cta">SHOW MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-side">
+        <img src="/images/cta-car-image.jpg" alt="">
+    </div>
+    
+    </section>
+    <section class="f-section f2">
+        <img src="/images/mb-section.png" alt="">
+        <div class="text-box">
+            <h2>Join The Mercedes Benz<br>
+                Loyalty Program</h2>
+            <p>Al Haddad Motors would like to thank you for your loyalty to our business. To show our appreciation we have created the Mercedes-Benz Loyalty Rewards specially designed for you to help you earn valuable rebates in the form of discount. Enroll today and start saving more.</p>
+            <a class="btn-cta">JOIN NOW</a>
+        </div>
+    </section>
+    <section class="brands">
+        <img src="/images/alhad.png" alt="">
+        <img src="/images/avis.png" alt="">
+        <img src="/images/merc.png" alt="">
+        <img src="/images/topaz.png" alt="">
+    </section>
+    <section class="app-cta">
+        <div class="app-text">
+            <img src="/images/logo.png" alt="AL Haddad Motors" class="alhad-logo">
+            <h3>Introducing Al Haddad's<br>Mobile App</h3>
+            <a href="https://apps.apple.com/us/app/al-haddad-motors/id1597613743">
+                <img src="/images/app-store.png" alt="App Store" class="app-icon">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.alhaddad.mercedes">
+                <img src="/images/google-play.png" alt="Play Store" class="app-icon">
+            </a>
+        </div>
+        <div class="app-image">
+            <img src="/images/alhad-app-mockup.png" alt="Mobile App Mockup">
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="copy">
+            Copyright © 2022 - Al Haddad Motors
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav'); 
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', function(){
+    this.classList.toggle('close');
+    nav.classList.toggle('reveal-nav');
+    menu.classList.toggle('reveal-items');
+})
+    </script>
+</body>
+</html>

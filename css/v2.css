@@ -1,0 +1,921 @@
+/* All Haddad Version 2 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+
+}
+
+header {
+    font-family: 'Poppins', 'sans-serif';
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav-menu {
+    display: flex;
+    padding: 30px 5%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.ul-menu {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.ul-menu li {
+    margin-right: 20px;
+}
+
+.ul-menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s ease-in;
+}
+
+.ul-menu a:hover {
+    color: rgb(150, 150, 150);
+}
+
+.homepage-header {
+    width: 100%;
+    height: 700px;
+    background: url('/images/homeage-slider.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+/* Homepage Content */
+
+.page-container {
+    padding: 30px 5%;
+}
+
+/* HP Brand Section */
+
+.brands-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.brand-box {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    width: 280px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all .3s ease-in;
+}
+
+.brand-box:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+
+.brand-box img {
+    height: 82px;
+    width: 80%;
+}
+
+.avis-logo img {
+    height: 70px;
+}
+
+
+/* HP About section */
+
+.hp-about {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hp-about img {
+    width: 100%;
+    height: 250px;
+}
+
+
+.hp-reverse {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+
+.hp-reverse img {
+    width: 100%;
+}
+
+.text-section {
+    font-family: 'Poppins','sans-serif';
+    line-height: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text-section h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom : 10px;
+}
+
+.cta-btn-black {
+    display: flex;
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.cta-btn-black:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+a.cta-btn-black {
+    text-decoration: none;
+}
+
+/* Hompeage CTA Section */
+
+
+
+.cta-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+.text-plax {
+    background-image: url('/images/section-image.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/bg-red-car.jpg"); /* The least supported option. */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.cta-section img {
+    width: 100%;
+    height: 500px;
+}
+
+.text-inside {
+    font-family: 'Roboto';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: auto;
+}
+
+.text-inside h2 {
+    font-size: 60px;
+}
+
+.text-inside .btn-cta {
+    margin-top: 20px;
+    width: 180px;
+    text-align: center;
+    height: 60px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.text-inside .btn-cta:hover {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: black;
+}
+
+.f2 {
+    display: flex;
+    flex-direction: row-reverse !important;
+}
+
+
+.text-box .btn-cta {
+    margin-top: 20px;
+    width: 180px;
+    text-align: center;
+    height: 60px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease-in;
+    font-weight: 400;
+}
+
+.text-box .btn-cta:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+
+/* Mobile APP CTA SECTION */
+
+.app-cta {
+    width: 100%;
+    height: 600px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.alhad-logo {
+    margin-bottom: 30px;
+}
+.app-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.app-text h3 {
+    font-family: 'Poppins', 'Sans-serif';
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.app-icon {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.app-image img {
+    width: 700px;
+}
+
+.app-text a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Recent News Section */
+
+.recent-news {
+    font-family: 'Poppins', sans-serif;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px; */
+}
+
+.recent-news h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.recent-news .news-single img {
+    width: 280px;
+    height: 180px;
+}
+
+.recent-news .news-single {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 460px;
+    justify-content: space-evenly;
+}
+
+
+.cta-btn-white {
+    width: 170px;
+    text-align: center;
+    height: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease-in;
+    font-weight: 400;
+}
+
+.cta-btn-white {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.cta-btn-white:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+
+/* Footer */
+
+
+
+.footer-container {
+    padding: 60px 5%;
+    background-color: #000000;
+    color: rgb(206, 206, 206);
+    font-family: 'Poppins', 'sans-serif';
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.footer-about {
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-about img {
+    width: 50%;
+    text-align: center;
+}
+
+.footer-menu {
+    width: 20%;
+}
+
+.footer-pages {
+    width: 20%;
+}
+
+.footer-social {
+    width: 20%;
+}
+
+.ul-foot {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.ul-foot li {
+    margin-top: 30px;
+}
+
+.ul-foot li a {
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    transition: all .3s ease-in;
+    display: inline-block;
+}
+
+.ul-foot li a:hover {
+    color: white;
+    transform: translateY(-0.6rem);
+}
+
+.footer-social-container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 10px;
+    margin-top: 20px;
+    height: 200px;
+}
+
+.footer-social-container i {
+    font-size: 19px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+
+}
+
+.footer-social-icons i {
+    font-size: 28px;
+    color: rgb(206, 206, 206);
+    transition: all .3s ease-in;
+}
+
+.footer-social-icons i:hover {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    transform: translateY(-0.6rem);
+}
+
+/* Footer BAR */
+
+.footer-bar {
+    font-family: 'Poppins',sans-serif;
+    width: 100%;
+    height: 40px;
+    color: rgb(206, 206, 206);
+    background-color: #0c0c0c;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Innerpages CSS */
+
+.page-content-header {
+    height: 400px;
+    background: url('/images/hero-bg.png');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title {
+    margin-top: 60px;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.bread {
+    color: white;
+}
+
+
+/* Loyalty form */
+
+.container {
+    font-family: 'Poppins';
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 41, 255, 0.02) 0%,
+        rgba(0, 41, 255, 0) 100%
+    );
+}
+.container label,
+.container .form-input,
+.container textarea {
+    display: block;
+    width: 100%;
+}
+
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container li {
+    padding: 0.3em;
+}
+.container span {
+    font-weight: 700;
+    color: #102a43;
+    line-height: 35px;
+    line-height: 2.5rem;
+    font-size: 12px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.container input[type="submit"] {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container {
+    width: 860px;
+    margin: 5em auto;
+}
+.container form {
+    background-color: #ffffff;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.required-star {
+    color: #fc4366;
+}
+
+.container .form-input,
+textarea {
+    width: 100%;
+    padding: 9px 20px;
+    border: 1px solid #e1e2eb;
+    background-color: #fff;
+    color: #102a43;
+    caret-color: #829ab1;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 29px;
+    line-height: 2rem;
+    box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
+    border-radius: 3px;
+    line-height: 29px;
+    line-height: 2rem;
+}
+
+
+/* Contact Page */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.contact-box {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 80%;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    top: 150%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+
+
+.contact-card-container {
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    padding: 30px;
+    width: 100%;
+}
+
+.contact-card i {
+    font-size: 80px;
+    margin-bottom: 60px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-card p {
+    font-size: 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Contact V3 */
+
+.main-contact-container {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 5%;
+    gap: 30px;
+}
+
+.main-contact-map {
+    width: 100%;
+}
+
+.main-contact-box {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    height: 400px;
+    padding: 30px;
+    justify-content: center;
+    width: 100%;
+
+
+}
+
+.main-contact-box h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.main-contact-box i {
+    font-size: 30px;
+}
+
+.mci {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.mci a {
+    text-decoration: none;
+    color: black;
+}
+
+@media all and (max-width: 480px) { 
+    header, .page-content-header, body {
+        display: none;
+    }
+}
+
+@media all and (max-width: 810px) { 
+    header, .page-content-header, body {
+        display: none;
+    }
+}
+
+
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.select {
+    position: relative;
+    min-width: 200px;
+  }
+  .select svg {
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #9098a9;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  }
+  .select select {
+    padding: 7px 40px 7px 12px;
+    width: 100%;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+  }
+  .select select:required:invalid {
+    color: #5a667f;
+  }
+  .select select option {
+    color: #223254;
+  }
+  .select select option[value=""][disabled] {
+    display: none;
+  }
+  .select select:focus {
+    outline: none;
+    border-color: #07f;
+    box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
+  }
+  .select select:hover + svg {
+    stroke: #07f;
+  }
+  .sprites {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+
+
+  /* Custom CSS For Radio Buttons */
+
+  .flex {
+      display: flex;
+  }
+
+  .flex-gap-10 {
+      gap: 10px;
+  }
+
+  /* Blogroll CSS */
+
+  .mt-1 {
+      margin-top: 10px;
+  }
+
+  .mt-2 {
+      margin-top: 20px;
+  }
+
+  .mt-3 {
+      margin-top: 30px;
+  }
+
+
+  .blogroll-sidebar {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+  .blog-singleroll {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+  }
+
+  .blogroll-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 700px;
+  }
+
+  .blog-singleroll img {
+      width: 300px;
+  }
+
+
+  #namanyay-search-btn {
+    background:#000000;
+    color:white;
+    font-family: 'poppins', trebuchet;
+    padding:10px 20px;
+    border:0 none;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100px;
+    border: 1px solid #000000;
+    transition: all .3s ease-in;
+    }
+
+    #namanyay-search-btn:hover {
+        background:#ffffff;
+        color:rgb(0, 0, 0);
+        font-family: 'poppins', trebuchet;
+        padding:10px 20px;
+        border:0 none;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 130px;
+        border: 1px solid #000000;
+        }
+     
+    #namanyay-search-box {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(81, 81, 81) !important;
+    padding:10px;
+    border:0 none;
+    width:70%;
+     }
+
+
+.about-sidebar {
+    margin-top: 30px;
+}
+
+.widget-title {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'Poppins'; 
+}
+
+.h3-sidebar {
+    font-weight: 500 !important;
+}
+
+.widget-text ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.widget-text ul li {
+    margin-bottom: 10px;
+}
+
+.widget-text ul li a {
+    text-decoration: underline;
+    color: #1a1a1a;
+}
+
+.widget-text ul li a:hover {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+
+/* Single Post CSS */
+
+.f-image img {
+    width: 90%;
+}
+
+.single-post h1 {
+    font-size: 30px;
+}
+
+.author-box img {
+    width: 50px;
+}
+
+.author-box {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 0;
+}
+
+.a-left {
+    display: flex;
+    gap: 30px;
+}
+
+.a-meta  {
+display: flex;
+flex-direction: column;
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-content {
+    text-align: justify;
+}
